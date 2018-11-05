@@ -67,9 +67,6 @@ Setting the `redirect-trailing-slash-handler` as a second argument to `ring-hand
 ; {:status 308, :headers {"Location" "/pong/"}, :body ""}
 ```
 
-
-
-
 `redirect-trailing-slash-handler` can be composed with the default handler using `ring/routes` for more correct http error responses:
 ```clj
 (def app
